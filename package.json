@@ -1,0 +1,18 @@
+{
+  "name": "angular-project",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "http-server": "^0.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exogenesick/angular-project.git"
+  },
+  "author": "Krzysztof Pająk <kpajak@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exogenesick/angular-project/issues"
+  },
+  "homepage": "https://github.com/exogenesick/angular-project#readme"
+}
