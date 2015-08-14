@@ -2,17 +2,19 @@
   "name": "angular-project",
   "version": "1.0.0",
   "description": "",
+  "dependencies": {
+    "socket.io": "^1.3.6"
+  },
   "devDependencies": {
+    "bower": "^1.4.1",
+    "concurrently": "^0.1.1",
     "http-server": "^0.8.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/exogenesick/angular-project.git"
+  "scripts": {
+    "server:http": "./node_modules/.bin/http-server",
+    "server:socket": "node ./src/socket-server.js",
+    "app": "node ./node_modules/concurrently/src/main.js --kill-others \"npm run server:http\" \"npm run server:socket\""
   },
   "author": "Krzysztof Pająk <kpajak@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/exogenesick/angular-project/issues"
-  },
-  "homepage": "https://github.com/exogenesick/angular-project#readme"
+  "license": "ISC"
 }
